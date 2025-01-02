@@ -9,6 +9,7 @@ import kotlinx.coroutines.launch
 class WeatherViewModel : ViewModel() {
     private val weatherApi = RetroInstance.weatherApi
 
+
     //
     fun getData(city: String) {
         viewModelScope.launch {
